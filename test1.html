@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style1.css">
+    </head>
+    <body>
+        <div class="top">
+            <div id="icon">
+                <div id="container-side-nav-btn" onclick="openNav()">
+                    <div id="bar1"></div>
+                    <div id="bar2"></div>
+                    <div id="bar3"></div>
+                  </div>
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Clients</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div id="title">
+                    <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;color: white">Crack Covid-19</h1>
+                </div>
+            </div>
+            <div class="top-nav"></div>
+        </div>
+        <div class="mid"></div>
+        <div class="bottom">
+            <div id="bottom-left"></div>
+            <div id="bottom-right">
+                <p>Jayesh Pandit</p>
+                <p style="overflow:visible;">Contact:jayesh.pandit2018@vitstudent.ac.in</p>
+            </div>
+        </div>
+    </body>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+          }
+        </script>
+</html>
