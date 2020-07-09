@@ -1,0 +1,84 @@
+<html>
+<head>
+  <base href="/">
+  <title>Watson Assistant Chat App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta property="og:image" content="conversation.svg" />
+  <meta property="og:title" content="Conversation Chat Simple" />
+  <meta property="og:description" content="Sample application that shows how to use the Watson Assistant API to identify user intents" />
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+        <div class="top">
+            <div id="icon">
+                <div id="container-side-nav-btn" onclick="openNav()">
+                    <div id="bar1"></div>
+                    <div id="bar2"></div>
+                    <div id="bar3"></div>
+                  </div>
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="watson.html">Watson</a>
+                </div>
+                <div id="title">
+                    <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;color: white">Crack Covid-19</h1>
+                </div>
+            </div>
+            <div class="top-nav">
+              <span id="top-nav-optn" onclick="parent.location='index.html'"><b>Home</b></span>
+              <span id="top-nav-optn" onclick="parent.location='contact.html'"><b>Contact</b></span>
+              <span id="top-nav-optn" onclick="parent.location='about.html'"><b>About</b></span>
+              <span id="top-nav-optn" onclick="parent.location='watson.html'"><b>Watson Assistant</b></span>
+            </div>
+          </div>
+          
+
+        <div class="mid">
+           <div style="padding:20px;border:1px solid black;border-radius:20px;display:flex;align-content:center;justify-content:center;">
+               <button onclick="http://127.0.0.1:5000/">Click this button to check nearest lab</button>
+           </div>
+      </div>
+        
+        <div class="bottom">
+            <div id="bottom-left">
+                <ul>
+                    <li>To check the nearest lab to your location, click the button in the middle section of Home page which says "Click this button to check nearest lab"</li>
+                </ul>
+            </div>
+            <div id="bottom-right">
+                <p>For further queries, mail us. Our mail ids are given on contact page.</p>
+            </div>
+        </div>
+  
+    <script>
+        function openNav() {
+            document.getElementById('mySidenav').style.width = '250px';
+          }
+          
+          function closeNav() {
+            document.getElementById('mySidenav').style.width = '0';
+          }
+          
+          function openWatson() {
+            document.getElementById("myWatson").style.width = "80%";
+            }
+
+            function closeWatson() {
+                document.getElementById("myWatson").style.width = "0";
+            }
+    </script>
+  <script src="js/common.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/conversation.js"></script>
+  <script src="js/payload.js"></script>
+  <script src="js/global.js"></script>
+  <script type="text/javascript" src="https://cdn.rawgit.com/watson-developer-cloud/watson-developer-cloud.github.io/master/analytics.js"></script>
+</body>
+</html>
